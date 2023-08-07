@@ -23,6 +23,3 @@ jobs:
 
     - name: Executar testes
       run: npm test
-
-    - name: Deploy da aplicação
-      run: npm start
