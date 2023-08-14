@@ -6,12 +6,12 @@ chai.use(chaiHttp);
 chai.should();
 
 describe('Testes da Aplicação', () => {
-  it('Deve retornar uma mensagem "Olá, Mundo!"', (done) => {
+  it('Deve retornar uma mensagem "Olá Mundo!"', (done) => {
     chai.request(app)
       .get('/')
       .end((err, res) => {
         res.should.have.status(200);
-        res.text.should.equal('Olá, Mundo!');
+        res.text.should.equal('Olá Mundo!');
         done();
       });
   });
